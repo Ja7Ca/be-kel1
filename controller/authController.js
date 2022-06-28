@@ -19,8 +19,8 @@ function formatUser(user) {
 
 module.exports = {
     getLogin: (req, res) =>{
-        res.render('views/login')
-        // res.json({message: "Masukkan Email dan Password", success: true, data: {}})
+        // res.render('views/login')
+        res.json({message: "Masukkan Email dan Password", success: true, data: {}})
     },
     postLogin: (req, res) =>{
         console.log(req.body)
